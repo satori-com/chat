@@ -1,0 +1,69 @@
+.createdChat {
+  @include chatContainer;
+}
+
+.createdChat-section {
+  margin: 20px;
+  text-align: center;
+}
+
+.createdChat-header {
+  margin-bottom: 40px;
+}
+
+.createdChat-title {
+  font-size: 24px;
+  font-family: $open-sans;
+  color: #16191c;
+
+  @include breakpoint($breakpoint-desktop) {
+    font-size: 38px;
+  }
+}
+
+.createdChat-icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+
+  @include breakpoint($breakpoint-desktop) {
+    width: 80px;
+  }
+}
+
+.createdChat-shareText {
+  font-weight: bold;
+  color: #313335;
+
+  @include breakpoint($breakpoint-desktop) {
+    font-size: 18px;
+  }
+}
+
+.createdChat-shareLink,
+.createdChat-expirationText,
+.createdChat-startingText {
+  color: #797979;
+  word-wrap: break-word;
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+#createdChat-copyButton {
+  margin-top: 30px;
+}
+
+.createdChat-expirationText {
+  margin: 47px auto 0;
+  max-width: 250px;
+  color: #6c7379;
+}
+
+.createdChat-startingText {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.createdChat-startButton {
+  margin-top: 15px;
+}

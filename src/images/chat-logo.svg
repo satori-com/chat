@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="93px" viewBox="0 0 95 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Chat_Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.1779337%" id="linearGradient-1">
+            <stop stop-color="#8DD9FF" offset="0%"></stop>
+            <stop stop-color="#00A2EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-671.000000, -124.000000)">
+            <g id="Chat_Logo" transform="translate(671.000000, 124.000000)">
+                <g id="Group-4">
+                    <text id="chat" font-family="OpenSans-Light, Open Sans, Arial, Helvetica, sans-serif" font-size="28" font-weight="300" line-spacing="30" fill="#F2F2F2">
+                        <tspan x="20.39648438" y="43.6601562">chat</tspan>
+                    </text>
+                    <path d="M81.097561,0 L13.902439,0 C6.25609756,0 0,6.27742153 0,13.9498256 L0,46.4994188 L0,53.4743316 L0,89.5113811 C0,90.878464 0.787804878,92.1106986 2.02628049,92.681479 C2.49085366,92.8953763 2.98670732,93 3.47792683,93 C4.29237805,93 5.09756098,92.7117036 5.74286585,92.1548731 L34.3865244,67.4241572 L81.097561,67.4241572 C88.7439024,67.4241572 95,61.1467357 95,53.4743316 L95,13.9498256 C95,6.27742153 88.7439024,0 81.097561,0 M80.9305556,6 C85.379125,6 89,9.66847031 89,14.1755149 L89,53.8851584 C89,58.392203 85.379125,62.0606733 80.9305556,62.0606733 L34.4517083,62.0606733 L32.3121528,62.0606733 L30.6913472,63.4738694 L6,85 L6,53.8851584 L6,46.8775743 L6,14.1755149 C6,9.66847031 9.620875,6 14.0694444,6 L80.9305556,6" id="Page-1" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,72 @@
+.botSelector {
+  display: block;
+  position: absolute;
+  bottom: 60px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.19), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #979797;
+  overflow: hidden;
+
+  &.botSelector--hidden {
+    display: none;
+  }
+}
+
+.botSelector-header {
+  background-color: #eaeaea;
+  border-bottom: 1px solid #979797;
+  border-top-radius: 8px;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2.33;
+  color: #4a4a4a;
+  display: flex;
+  padding: 5px 20px;
+}
+
+.botSelector-header-title {
+  flex: 1;
+}
+
+.botSelector-header-hint {
+  flex: 1;
+  text-align: right;
+  cursor: pointer;
+}
+
+.botSelector-body {
+  background: #fff;
+  padding: 9px 0;
+}
+
+.botSelector-item {
+  position: relative;
+  padding: 5px 0 5px 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4a4a4a;
+
+  &:hover {
+    background: #4990e2;
+    color: #fff;
+  }
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: 11px;
+    width: 19px;
+    height: 19px;
+    background-color: $primary-blue;
+    border-radius: 50%;
+  }
+
+  &.botImage::before {
+    background: url(../images/bot-avatar.svg);
+    background-size: cover;
+  }
+}

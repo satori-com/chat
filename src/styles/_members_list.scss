@@ -1,0 +1,48 @@
+.membersList {
+  text-align: center;
+  font-family: $open-sans;
+}
+
+.usersList {
+  max-width: 335px;
+  border-radius: 8px;
+  border: solid 1px #c0c0c0;
+  padding: 40px 0 40px 80px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.usersList-user {
+  width: 100%;
+  display: block;
+  text-align: left;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.usersList-name {
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 18px;
+  padding-top: 17px;
+  vertical-align: top;
+}
+
+.usersList-avatar {
+  display: inline-block;
+  width: 60px;
+}
+
+.membersList-introText {
+  max-width: 300px;
+  margin: 22px auto;
+}
+
+.membersList-empty {
+  margin-top: 30px;
+}

@@ -1,0 +1,41 @@
+.shareWidget {
+  border-radius: 8px;
+  max-width: 235px;
+  transform: translateX(-65px) translateY(-20px);
+
+  .shareWidget-header {
+    border-radius: 0;
+    height: 65px;
+  }
+
+  .shareWidget-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #d9d9d9;
+    margin: 0;
+    padding: 22px;
+  }
+
+  .shareWidget-body {
+    padding: 22px 27px;
+    color: #5e676e;
+    background: #fff;
+  }
+
+  .shareWidget-text {
+    font-family: inherit;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+
+  .shareWidget-shareUrl {
+    margin: 0;
+  }
+
+  .copyButton {
+    width: 182px;
+    height: 40px;
+    margin-top: 26px auto 0;
+  }
+}

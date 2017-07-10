@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,500,700');
+@import '../../node_modules/breakpoint-sass/stylesheets/_breakpoint';
+@import '../../node_modules/react-select/dist/react-select.css';
+
+$room-text-color: #262626;
+$room-prefix-color: #888;
+$primary-blue-light: #35b8ff;
+$primary-blue: #00a2eb;
+
+$breakpoint-desktop: 500px;
+
+$roboto: Roboto, Arial, Helvetica, sans-serif;
+$open-sans: OpenSans, Arial, Helvetica, sans-serif;
+
+@mixin chatContainer {
+  padding: 30px 20px;
+  max-width: 80%;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 28px;
+
+  @include breakpoint($breakpoint-desktop) {
+    padding: 30px;
+    max-width: 685px;
+    margin-top: 45px;
+  }
+}
+
+@import '_copy_button';
+@import '_room';
+@import '_members_list';
+@import '_message';
+@import '_create_channel';
+@import '_created_chat';
+@import '_share_widget';
+@import '_bot_selector';
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+html, input, textarea, body, button {
+  font-size: 14px/20px;
+  font-family: $roboto;
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-image: radial-gradient(circle at 51% 39%, #8d9eab, #22272b);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+
+#chat-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+
+  @include breakpoint($breakpoint-desktop) {
+    overflow: auto;
+  }
+}
+
+.headerBar {
+  background: #000;
+  display: block;
+}
+
+.headerBar-logo {
+  padding: 15px 0 13px 14px;
+
+  @include breakpoint($breakpoint-desktop) {
+    padding: 15px 0 13px 30px;
+  }
+}
+
+.chat-container {
+  @include chatContainer;
+
+  display: flex;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+  border-radius: 0;
+  overflow: hidden;
+  color: $room-text-color;
+  max-width: 100%;
+
+  @include breakpoint($breakpoint-desktop) {
+    padding: 0;
+    height: 75vh;
+    margin: 0 auto;
+    margin-top: 28px;
+    border-radius: 8px;
+    max-width: 685px;
+  }
+}
+
+.text--error {
+  color: #a94442;
+  line-height: 2;
+  font-size: 1.25rem;
+  padding: 0 5px;
+}
+
+.form-control, .form-control:focus {
+  border: 0;
+  box-shadow: none;
+  padding-left: 0 !important;
+  background: 0;
+  border-bottom: 1px solid #979797;
+  border-radius: 0 !important;
+  padding: 0;
+}
+
+// !importants to override bs button styles
+.btn {
+  width: 210px;
+  height: 45px;
+  border-radius: 75px;
+  font-size: 16px;
+  outline: 0 !important;
+
+  &:hover, &:focus:hover {
+    background-color: $primary-blue !important;
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+  }
+
+  &.disabled {
+    opacity: 0.6;
+  }
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:active {
+  border: 0;
+  background-color: $primary-blue-light !important;
+}
+
+.btn-secondary, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #fff;
+  color: $primary-blue;
+  border-radius: 75px;
+  border: solid 1.5px $primary-blue;
+}
+
+.copyButton {
+
+}
+
+.icon-backArrow {
+  transform: rotate(90deg);
+}
+
+.loadingSpinner {
+  display: flex;
+  justify-content: center;
+}

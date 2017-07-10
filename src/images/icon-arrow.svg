@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="13px" viewBox="0 0 24 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.6">
+        <g id="1D" transform="translate(-654.000000, -613.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <polygon id="Arrow" transform="translate(666.000000, 619.500000) rotate(-90.000000) translate(-666.000000, -619.500000) " points="660.107737 619.021099 659.5 619.647558 660.107737 620.274017 670.998229 631.5 672.213704 630.247081 661.323212 619.021099 661.323212 620.274017 672.5 608.752919 671.284525 607.5"></polygon>
+        </g>
+    </g>
+</svg>

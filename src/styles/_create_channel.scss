@@ -1,0 +1,111 @@
+.createChatChannel, .createUser, .joinChatChannel {
+  margin: 0 auto;
+  max-width: 75%;
+  padding-top: 20px;
+  text-align: center;
+
+  @include breakpoint($breakpoint-desktop) {
+    max-width: 600px;
+    padding-top: 120px;
+  }
+}
+
+.createChatChannel-welcome,
+.joinChatChannel-welcome {
+  font-size: 46px;
+  color: #fff;
+  margin-bottom: 70px;
+  font-weight: 100;
+  opacity: 0.6;
+
+  @include breakpoint($breakpoint-desktop) {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+}
+
+.createChat-form, .joinChatChannel {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+
+  .form-control, .form-control:focus {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 25px;
+    padding: 0;
+
+    @include breakpoint($breakpoint-desktop) {
+      font-size: 36px;
+      margin-top: 60px;
+    }
+  }
+
+  .expiration-preamble, .react-cntdwn-timer {
+    display: inline-block;
+  }
+
+  .expiration-preamble, .notStartedMsg {
+    margin-top: 25px;
+
+    @include breakpoint($breakpoint-desktop) {
+      margin-top: 60px;
+    }
+  }
+
+  .react-cntdwn-timer {
+    margin-left: 3px;
+  }
+
+  .createChat-button, .joinChat-button {
+    margin-top: 25px;
+
+    @include breakpoint($breakpoint-desktop) {
+      margin-top: 60px;
+    }
+  }
+
+  .select-label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.6;
+  }
+}
+
+.durationSelect {
+  text-align: left;
+  background: url('../images/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 140px 36px;
+  margin-top: 25px;
+
+  @include breakpoint($breakpoint-desktop) {
+    margin-top: 60px;
+  }
+
+  .Select-control {
+    background: transparent;
+    border: 0;
+    font-size: 64px;
+    font-weight: 300;
+    height: 75px;
+    box-shadow: none !important;
+  }
+
+  .Select-value {
+    padding-left: 0 !important;
+  }
+
+  .Select-value-label {
+    color: #fff !important;
+    line-height: 75px;
+  }
+
+  .Select-arrow {
+    display: none;
+  }
+}

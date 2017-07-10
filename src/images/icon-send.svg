@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>chat_icon_send</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MessageModul" transform="translate(-629.000000, -635.000000)">
+            <g id="chat_icon_send" transform="translate(629.000000, 635.000000)">
+                <g id="Group">
+                    <circle id="Oval-2" fill="#00A9FE" cx="15" cy="15" r="15"></circle>
+                    <g id="Group-3" transform="translate(14.332772, 15.443883) scale(-1, 1) rotate(-45.000000) translate(-14.332772, -15.443883) translate(6.554994, 7.666105)" fill-rule="nonzero" fill="#FFFFFF">
+                        <g id="noun_879812_cc" transform="translate(7.777778, 7.777778) scale(1, -1) translate(-7.777778, -7.777778) ">
+                            <polygon id="Shape" points="13.8675556 15.5555556 0 15.5555556 0 1.688 4.77488889 1.688 4.77488889 10.7806667 13.8675556 10.7806667"></polygon>
+                            <rect id="Rectangle-path" transform="translate(8.127410, 7.427911) rotate(45.000000) translate(-8.127410, -7.427911) " x="5.74021038" y="-0.689677707" width="4.77439866" height="16.2351776"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

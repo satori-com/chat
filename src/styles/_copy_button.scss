@@ -1,0 +1,23 @@
+.copyButton {
+  padding: 6px 12px;
+  margin-top: 30px;
+  color: $primary-blue;
+  border: 1.5px solid $primary-blue;
+  width: 210px;
+  height: 45px;
+  font-size: 16px;
+  outline: 0!important;
+
+  &:hover {
+    background-color: $primary-blue;
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+  }
+}
+
+.copyButton--copied {
+  background-color: $primary-blue;
+  border: 0;
+  color: #fff;
+}
