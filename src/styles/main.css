@@ -37,6 +37,10 @@
     left: 0; }
     .roomPane .hamburgerMenu.active {
       background-color: rgba(255, 255, 255, 0.3); }
+  .roomPane .hamburgerMenu-container {
+    position: absolute;
+    width: 100%;
+    z-index: 100; }
   .roomPane .hamburgerMenu-item {
     display: none;
     text-decoration: none;

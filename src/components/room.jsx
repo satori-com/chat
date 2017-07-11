@@ -111,19 +111,21 @@ class Room extends React.Component {
               <img src={iconTimer} className="iconTimer" alt="" />
             </div>}
         </header>
-        <Link
-          to={`/channel/${channelName}/members`}
-          key={channelName}
-          className={classNames('hamburgerMenu-item', { active: this.state.hamburgerActive })}>
-          Participants
-        </Link>
-        <a
-          href="https://www.satori.com/apps/chat"
-          className={classNames('hamburgerMenu-item', { active: this.state.hamburgerActive })}
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn More
-        </a>
+        <div className="hamburgerMenu-container">
+          <Link
+            to={`/channel/${channelName}/members`}
+            key={channelName}
+            className={classNames('hamburgerMenu-item', { active: this.state.hamburgerActive })}>
+            Participants
+          </Link>
+          <a
+            href="https://www.satori.com/apps/chat"
+            className={classNames('hamburgerMenu-item', { active: this.state.hamburgerActive })}
+            target="_blank"
+            rel="noopener noreferrer">
+            Learn More
+          </a>
+        </div>
         <MessageHistory
           history={history}
           status={status}
