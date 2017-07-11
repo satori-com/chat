@@ -51,6 +51,7 @@ class MembersList extends React.Component {
                 targetDate={getExpirationDate(expiration)}
                 format={{hour: 'hh', minute: 'mm', second: 'ss'}}
                 timeSeparator={':'}
+                leadingZero={true}
                 onFinished={onExpiration} />
               <img src={iconTimer} className="iconTimer" alt="" />
             </div>}

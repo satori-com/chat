@@ -31,6 +31,7 @@ const JoinChatForm = props => {
               targetDate={getExpirationDate(expiration)}
               format={{hour: 'hh', minute: 'mm', second: 'ss'}}
               timeSeparator={':'}
+              leadingZero={true}
             />
           </div>)
           : <p className="notStartedMsg">This chat has not started yet</p>
