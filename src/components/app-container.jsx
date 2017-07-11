@@ -1,6 +1,6 @@
 import React from 'react';
 import Types from 'prop-types';
-import satoriLogo from '../images/satori-logo.png';
+import satoriLogo from '../images/SatoriLogoWithText.svg';
 
 class AppContainer extends React.Component {
   render() {
