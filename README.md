@@ -227,6 +227,6 @@ Try extending the demo to include more chat functionality and different streambo
 You can embed this app in your apps or in other demo apps we offer.
 
 # Further reading
-- [Satori Developer Documentation](https://wwwstage.satori.com/docs/introduction/new-to-satori): Documentation for the entire Satori Live Data Ecosystem
+- [Satori Developer Documentation](https://www.satori.com/docs/introduction/new-to-satori): Documentation for the entire Satori Live Data Ecosystem
 - [Satori JavaScript SDK](https://github.com/satori-com/satori-rtm-sdk-js): The Satori JavaScript API and developer tools
-- [Satori JavaScript tutorial](https://wwwstage.satori.com/docs/tutorials/javascript-tutorial)):  Tutorial that shows you how to write JavaScript apps that use the SDK and the [Satori Live Messaging](https://wwwstage.satori.com/docs/using-satori/rtm-api) platform
+- [Satori JavaScript tutorial](https://www.satori.com/docs/rtm-sdks/tutorials/javascript-tutorial)):  Tutorial that shows you how to write JavaScript apps that use the SDK and the [Satori Live Messaging](https://www.satori.com/docs/using-satori/rtm-api) platform
