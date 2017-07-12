@@ -8,7 +8,13 @@
 }
 
 .createdChat-header {
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @include breakpoint($breakpoint-desktop) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .createdChat-title {
@@ -54,9 +60,13 @@
 }
 
 .createdChat-expirationText {
-  margin: 47px auto 0;
+  margin: 27px auto 0;
   max-width: 250px;
   color: #6c7379;
+
+  @include breakpoint($breakpoint-desktop) {
+    margin-top: 47px;
+  }
 }
 
 .createdChat-startingText {

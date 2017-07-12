@@ -297,14 +297,13 @@
 .joinChatChannel-welcome {
   font-size: 46px;
   color: #fff;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-weight: 100;
   opacity: 0.6; }
   @media (min-width: 500px) {
     .createChatChannel-welcome,
     .joinChatChannel-welcome {
-      font-size: 54px;
-      margin-bottom: 50px; } }
+      font-size: 54px; } }
 
 .createChat-form, .joinChatChannel {
   text-align: center;
@@ -385,7 +384,12 @@
   text-align: center; }
 
 .createdChat-header {
-  margin-bottom: 40px; }
+  margin-top: 0;
+  margin-bottom: 20px; }
+  @media (min-width: 500px) {
+    .createdChat-header {
+      margin-top: 20px;
+      margin-bottom: 40px; } }
 
 .createdChat-title {
   font-size: 24px;
@@ -422,9 +426,12 @@
   margin-top: 30px; }
 
 .createdChat-expirationText {
-  margin: 47px auto 0;
+  margin: 27px auto 0;
   max-width: 250px;
   color: #6c7379; }
+  @media (min-width: 500px) {
+    .createdChat-expirationText {
+      margin-top: 47px; } }
 
 .createdChat-startingText {
   font-size: 20px;
