@@ -157,7 +157,7 @@
         width: 205px; } }
 
 .roomPane-messages {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 180px);
   overflow: auto;
   position: relative; }
   @media (min-width: 500px) {
@@ -580,7 +580,7 @@ ul {
   margin-top: 28px;
   display: flex;
   padding: 0;
-  height: 100vh;
+  height: calc(100vh - 59px);
   margin: 0;
   border-radius: 0;
   overflow: hidden;
