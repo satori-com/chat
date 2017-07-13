@@ -14,13 +14,12 @@
 .joinChatChannel-welcome {
   font-size: 46px;
   color: #fff;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-weight: 100;
   opacity: 0.6;
 
   @include breakpoint($breakpoint-desktop) {
     font-size: 54px;
-    margin-bottom: 50px;
   }
 }
 
