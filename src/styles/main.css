@@ -178,7 +178,7 @@
 
 .typing-indicator {
   text-align: center;
-  margin-top: -10px; }
+  margin-top: -20px; }
   @media (min-width: 500px) {
     .typing-indicator {
       margin-top: 0; } }

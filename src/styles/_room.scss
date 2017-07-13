@@ -212,7 +212,7 @@
 
 .typing-indicator {
   text-align: center;
-  margin-top: -10px;
+  margin-top: -20px;
 
   @include breakpoint($breakpoint-desktop) {
     margin-top: 0;
