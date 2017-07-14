@@ -22,7 +22,8 @@
 
 .roomPane {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .roomPane .form-control, .roomPane .form-control:focus, .roomPane .form-control:active {
     border-bottom: 0; }
   .roomPane .icon-hamburgerMenu {
@@ -178,7 +179,7 @@
 
 .typing-indicator {
   text-align: center;
-  margin-top: -10px; }
+  margin-top: -20px; }
   @media (min-width: 500px) {
     .typing-indicator {
       margin-top: 0; } }
@@ -652,3 +653,14 @@ ul {
 .loadingSpinner {
   display: flex;
   justify-content: center; }
+
+.console {
+  z-index: 100; }
+
+.console-item {
+  background-color: #000;
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }

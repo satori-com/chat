@@ -180,3 +180,16 @@ ul {
   display: flex;
   justify-content: center;
 }
+
+.console {
+  z-index: 100;
+}
+
+.console-item {
+  background-color: #000;
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
