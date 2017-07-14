@@ -19,7 +19,13 @@ export function getUser() {
   }
 
   try {
-    return JSON.parse(user);
+    user = JSON.parse(user);
+    if (!user.name || !user.id || !user.avatar) {
+      setUser(null);
+      return {};
+    }
+
+    return user;
   } catch (e) {
     return {};
   }

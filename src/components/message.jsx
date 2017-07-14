@@ -88,8 +88,8 @@ class Message extends React.PureComponent {
       <li className="roomPane-message-li">
         <div className="roomPane-message-avatar">
           <SVGAvatar
-            avatar={message.user.avatar.avatar}
-            color={message.user.avatar.color}
+            avatar={message.user && message.user.avatar ? message.user.avatar.avatar : 'avatar2'}
+            color={message.user && message.user.avatar ? message.user.avatar.color : 'grey'}
             width={60}
           />
         </div>
