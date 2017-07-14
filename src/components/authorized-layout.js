@@ -10,7 +10,10 @@ const mapStateToProps = state => ({
 // layout is used for pages which require authentication
 class AuthorizedLayout extends React.Component {
   _shouldRedirectToLogin(props) {
-    return props.me.isEmpty() && props.location.pathname.includes('channel/');
+    const { me, location } = props;
+
+    return location.pathname.includes('channel/') &&
+      (me.isEmpty() || !me.get('name') || !me.get('id') || !me.get('avatar'));
   }
 
   _redirectToLoginPageIfNeeded(props) {
