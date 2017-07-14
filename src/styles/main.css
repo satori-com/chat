@@ -20,6 +20,9 @@
   border: 0;
   color: #fff; }
 
+.roomPane-container {
+  height: 100%; }
+
 .roomPane {
   position: relative;
   width: 100%;

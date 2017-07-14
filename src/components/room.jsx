@@ -97,7 +97,7 @@ class Room extends React.Component {
     const chatUrl = getChatUrl(channelName);
 
     return (
-      <div>
+      <div className="roomPane-container">
         <div className="roomPane">
           <header className="roomPane-header">
             <div
