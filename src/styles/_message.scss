@@ -25,6 +25,11 @@
 .message-text {
   font-family: $open-sans;
   word-wrap: break-word;
+  max-width: 255px;
+
+  @include breakpoint($breakpoint-desktop) {
+    max-width: 100%;
+  }
 }
 
 .messageInput {

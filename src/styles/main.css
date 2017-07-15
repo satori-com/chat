@@ -252,7 +252,11 @@
 
 .message-text {
   font-family: OpenSans, Arial, Helvetica, sans-serif;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  max-width: 255px; }
+  @media (min-width: 500px) {
+    .message-text {
+      max-width: 100%; } }
 
 .messageInput {
   position: relative;
