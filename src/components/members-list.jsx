@@ -43,7 +43,7 @@ class MembersList extends React.Component {
             <img src={iconArrow} className="icon-backArrow" alt="Back" />
           </Link>
           <h2 className="roomPane-name">
-            {channel.get('topic')} ({onlineUsers.size + 1})
+            {channel.get('topic')} ({onlineUsers.size})
           </h2>
           {expiration &&
             <div className="roomPane-countdown">

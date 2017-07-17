@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Types from 'prop-types';
 import { connect } from 'react-redux';
 import { routerActions } from 'react-router-redux';
-import { getOnlineUsersButMe, isChannelExpired, throttle } from '../libs/utils';
+import { getOnlineUsers, isChannelExpired, throttle } from '../libs/utils';
 
 const mapStateToProps = (state) => {
   const { channels, me } = state;
   return {
     channels,
     me,
-    onlineUsers: getOnlineUsersButMe(me, state.presence),
+    onlineUsers: getOnlineUsers(me, state.presence),
   };
 };
 

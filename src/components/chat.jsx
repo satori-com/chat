@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 import { routerActions } from 'react-router-redux';
 import ChatContainer from './chat-container';
 import Room from './room';
-import { getOnlineUsersButMe } from '../libs/utils';
+import { getOnlineUsers } from '../libs/utils';
 
 const mapStateToProps = (state) => {
   const { channels, me } = state;
   return {
     channels,
     me,
-    onlineUsers: getOnlineUsersButMe(me, state.presence),
+    onlineUsers: getOnlineUsers(me, state.presence),
   };
 };
 
