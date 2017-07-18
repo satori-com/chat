@@ -63,7 +63,7 @@ class RTMActions {
       }
     };
     const channelSubScription = this.rtm.subscribe(contentChannelName, CHANNEL_OPTS, ondata);
-    const presenceSubScription = this.rtm.subscribe(presenceChannelName, CHANNEL_OPTS, ondata);
+    const presenceSubScription = this.rtm.subscribe(presenceChannelName, {}, ondata);
 
     return {
       channel: channelSubScription,

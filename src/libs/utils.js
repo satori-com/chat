@@ -8,12 +8,11 @@ export function getExpirationDate(expiration) {
   return new Date(expiration);
 }
 
-export function getOnlineUsersButMe(me, state) {
-  const onlineUsers = state.get('users');
-  let onlineUsersButMe = onlineUsers.filter(u => u.get('id') !== me.get('id'));
+export function getOnlineUsers(me, state) {
+  let onlineUsers = state.get('users');
   const myActiveRoom = me.get('activeRoom');
-  onlineUsersButMe = onlineUsersButMe.filter(u => myActiveRoom && (u.get('activeRoom') === myActiveRoom));
-  return onlineUsersButMe.map((u) => {
+  onlineUsers = onlineUsers.filter(u => myActiveRoom && (u.get('activeRoom') === myActiveRoom));
+  return onlineUsers.map((u) => {
     const { id, avatar, name, isTyping } = u.toJS();
     return { id, avatar, name, isTyping };
   });

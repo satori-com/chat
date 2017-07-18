@@ -4,8 +4,8 @@ import classNames from 'classnames';
 
 class TypingIndicator extends React.Component {
   getTypingUsers() {
-    const { onlineUsers } = this.props;
-    return onlineUsers.filter(u => !!u.isTyping);
+    const { onlineUsers, me } = this.props;
+    return onlineUsers.filter(u => !!u.isTyping && u.id !== me.get('id'));
   }
 
   getFormattedNames(users) {
@@ -32,6 +32,7 @@ class TypingIndicator extends React.Component {
 
 TypingIndicator.propTypes = {
   onlineUsers: Types.object.isRequired,
+  me: Types.object.isRequired,
 };
 
 TypingIndicator.displayName = 'TypingIndicator';

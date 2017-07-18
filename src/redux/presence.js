@@ -33,7 +33,7 @@ export default function presenceReducer(state = emptyPresence, action) {
       if (PRESENCE_INTERVAL < (currentTs - newState.get('cleanedAt'))) {
         newState = newState
           .set('cleanedAt', currentTs)
-          .update('users', users => users.filter(u => (currentTs - u.get('refreshedAt')) < 10 * PRESENCE_INTERVAL));
+          .update('users', users => users.filter(u => (currentTs - u.get('refreshedAt')) < 50000));
       }
       return newState;
     default:

@@ -110,7 +110,7 @@ class Room extends React.Component {
                 alt="Chat Menu" />
             </div>
             <h2 className="roomPane-name">
-              {channel.get('topic')} ({onlineUsers.size + 1})
+              {channel.get('topic')} ({onlineUsers.size})
             </h2>
             {expiration &&
               <div className="roomPane-countdown">
@@ -152,6 +152,7 @@ class Room extends React.Component {
           />
           <TypingIndicator
             onlineUsers={onlineUsers}
+            me={user}
           />
           <footer className="roomPane-footer">
             <BotSelector
