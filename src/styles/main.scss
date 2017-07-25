@@ -86,12 +86,27 @@ ul {
 
 .headerBar {
   background: #000;
-  display: block;
+  display: flex;
 }
 
-.headerBar-logo {
-  padding: 15px 0 13px 14px;
+.headerBar-nav {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 54px;
+}
 
+.button-github {
+  display: none;
+
+  @include breakpoint($breakpoint-desktop) {
+    display: initial;
+  }
+}
+
+.satori-logo {
   @include breakpoint($breakpoint-desktop) {
     padding: 15px 0 13px 20px;
   }
@@ -166,10 +181,6 @@ ul {
   color: $primary-blue;
   border-radius: 75px;
   border: solid 1.5px $primary-blue;
-}
-
-.copyButton {
-
 }
 
 .icon-backArrow {

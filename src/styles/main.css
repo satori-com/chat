@@ -577,13 +577,25 @@ ul {
 
 .headerBar {
   background: #000;
-  display: block; }
+  display: flex; }
 
-.headerBar-logo {
-  padding: 15px 0 13px 14px; }
+.headerBar-nav {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 54px; }
+
+.button-github {
+  display: none; }
   @media (min-width: 500px) {
-    .headerBar-logo {
-      padding: 15px 0 13px 20px; } }
+    .button-github {
+      display: initial; } }
+
+@media (min-width: 500px) {
+  .satori-logo {
+    padding: 15px 0 13px 20px; } }
 
 .chat-container {
   padding: 30px 20px;

@@ -1,13 +1,17 @@
 import React from 'react';
 import Types from 'prop-types';
-import satoriLogo from '../images/SatoriLogoWithText.svg';
+import { SatoriLogo, GitHubButton, SignUpButton } from '@satori-sdk/component-library';
 
 class AppContainer extends React.Component {
   render() {
     return (
       <div className="appContainer">
         <div className="headerBar">
-          <img src={satoriLogo} className="headerBar-logo" alt="Satori Logo" />
+          <SatoriLogo />
+          <div className="headerBar-nav ">
+            <GitHubButton projectUrl="https://github.com/satori-com/chat"/>
+            <SignUpButton />
+          </div>
         </div>
         {this.props.children}
       </div>
