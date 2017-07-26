@@ -47,17 +47,12 @@ $open-sans: OpenSans, Arial, Helvetica, sans-serif;
 
 html, input, textarea, body, button {
   font-size: 14px/20px;
-  font-family: $roboto;
 }
 
 html, body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-}
-
-body {
-  background-image: radial-gradient(circle at 51% 39%, #8d9eab, #22272b);
 }
 
 ul {
@@ -73,42 +68,9 @@ ul {
   display: block; /* For Firefox */
 }
 
-#chat-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-
+#app-root {
   @include breakpoint($breakpoint-desktop) {
     overflow: auto;
-  }
-}
-
-.headerBar {
-  background: #000;
-  display: flex;
-}
-
-.headerBar-nav {
-  align-items: center;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 54px;
-}
-
-.button-github {
-  display: none;
-
-  @include breakpoint($breakpoint-desktop) {
-    display: initial;
-  }
-}
-
-.satori-logo {
-  @include breakpoint($breakpoint-desktop) {
-    padding: 15px 0 13px 20px;
   }
 }
 

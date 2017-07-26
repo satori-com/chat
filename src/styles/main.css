@@ -543,16 +543,12 @@
   -webkit-box-sizing: border-box; }
 
 html, input, textarea, body, button {
-  font-size: 14px/20px;
-  font-family: Roboto, Arial, Helvetica, sans-serif; }
+  font-size: 14px/20px; }
 
 html, body {
   margin: 0;
   height: 100vh;
   overflow: hidden; }
-
-body {
-  background-image: radial-gradient(circle at 51% 39%, #8d9eab, #22272b); }
 
 ul {
   list-style: none;
@@ -566,36 +562,9 @@ ul {
   display: block;
   /* For Firefox */ }
 
-#chat-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  height: 100vh;
-  width: 100vw; }
-  @media (min-width: 500px) {
-    #chat-container {
-      overflow: auto; } }
-
-.headerBar {
-  background: #000;
-  display: flex; }
-
-.headerBar-nav {
-  align-items: center;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 54px; }
-
-.button-github {
-  display: none; }
-  @media (min-width: 500px) {
-    .button-github {
-      display: initial; } }
-
 @media (min-width: 500px) {
-  .satori-logo {
-    padding: 15px 0 13px 20px; } }
+  #app-root {
+    overflow: auto; } }
 
 .chat-container {
   padding: 30px 20px;

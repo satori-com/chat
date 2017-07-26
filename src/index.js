@@ -17,5 +17,5 @@ rtm.initSubscriptions(store);
 // bind the root react component to the DOM element
 ReactDOM.render(
     createRouter(store, history),
-    document.getElementById('chat-container'),
+    document.getElementById('app-root'),
 );
