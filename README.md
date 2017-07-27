@@ -207,13 +207,16 @@ The chat app uses the following Satori components:
 As noted, it also uses the React Create App framework.
 
 ## Moderator streambot (**moderator**)
-This streambot is the controller for the chat app. It creates channels, manages and stores metadata, and publishes messages as needed.
+This streambot is the controller for the chat app. It manages and stores metadata and publishes messages as needed.
 
 ## channel-manager
-Moderator creates, publishes to, and subscribes to the **channel-manager** channel.  By sending and retrieving metadata messages with channel-manager, moderator tracks user metadata, enforces security, and sends messages to streambots subscribed to other channels:
-- **User metadata**: Although moderator sends and retrieves user metadata with channel-manager, the channel doesn't hold an infinite number of messages. To ensure the metadata is always available, moderator stores it in the Satori Key-Value Store. With this information, moderator can update newly-joined app instances with metadata, even if the original messages are no longer available.
+Moderator uses the **channel-manager** channel to manage user metadata, enforce security, and communicate with streambots used by the app:
+- **User metadata**: Moderator publishes messages about current chat users to channel-manager, and newly-joined app instances use the message data to get the current state of the chat.
 - **Security**: To ensure that app instances can only read messages in rooms to which they were invited, apps are not allowed read access to `channel-manager`. Instead, app instances read from their chat room channel.
 - **Streambots**: Moderator controls the weather streambot by publishing bot_message messages to channel-manager. When the weather streambot receives a bot_message, it retrieves data from the National Weather Service and publishes it to channel-manager.
+
+## Persistence
+Because channels can't keep an infinite number of messages, moderator uses key-value storage to archive older channel-manager messages.
 
 ## Presence emulation
 App instances periodically post update_presence messages to `channel-manager`. Moderator processes and republishes these messages to a presence channel for the chat rooms.  When users join the chat room, the app instance reads the presence channel to determine who is actively using the chat room.
