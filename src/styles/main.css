@@ -548,7 +548,8 @@ html, input, textarea, body, button {
 html, body {
   margin: 0;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: transparent; }
 
 ul {
   list-style: none;
