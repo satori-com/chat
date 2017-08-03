@@ -6,7 +6,10 @@ class AppContainer extends React.Component {
   render() {
     return (
       <AppShell>
-        <AppHeader projectUrl="https://github.com/satori-com/chat" />
+        <AppHeader
+          hostUrl="https://www.satori.com"
+          projectUrl="https://github.com/satori-com/chat"
+        />
         <main>
           {this.props.children}
         </main>
