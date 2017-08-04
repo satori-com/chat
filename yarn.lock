@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@satori-sdk/component-library@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@satori-sdk/component-library/-/component-library-0.1.7.tgz#5fb12b7a24cef1eb0202a4e4c574c59fe751d4dd"
+"@satori-sdk/component-library@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@satori-sdk/component-library/-/component-library-0.1.10.tgz#9ec9f3c7c28fca0aafa2a70b02bf278d4da6a8ed"
   dependencies:
     clipboard "^1.7.1"
     jquery "^3.2.1"
